@@ -15,4 +15,4 @@ jobs:
         uses: github/super-linter@v7
         env:
           DEFAULT_BRANCH: main
-          GITHUB_TOKEN: ${{ secrets.isk_token }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
