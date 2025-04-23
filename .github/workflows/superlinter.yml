@@ -8,10 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          token: ${{ secrets.access-token }}
+        uses: actions/checkout@v2
       - name: Run Super-Linter
         uses: github/super-linter@v7
         env:
