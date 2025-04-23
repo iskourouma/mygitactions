@@ -2,6 +2,8 @@ name: Super-Linter
 
 on: push
 
+permissions: read-all
+
 jobs:
   super-lint:
     name: Lint Code Base
