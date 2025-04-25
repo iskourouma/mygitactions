@@ -15,7 +15,7 @@ jobs:
       statuses: write
     steps:
       - name: Checkout code
-        uses: actions/checkout@v7.2.1
+        uses: actions/checkout@v4.2.2
         with:
           # super-linter needs the full git history to get the
           # list of files that changed across commits
@@ -31,7 +31,7 @@ jobs:
           SAVE_SUPER_LINTER_SUMMARY: true
       - name: Post artifact
         if: always()
-        uses: actions/upload-artifact@v7.2.1
+        uses: actions/upload-artifact@v4.5.0
         with:
           name: lint results
           path: ${{ github.workspace }}/super-linter-output/super-linter-summary.md
