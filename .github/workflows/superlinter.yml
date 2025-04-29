@@ -25,13 +25,13 @@ jobs:
         env:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          VALIDATE_SQLFLUFF: true
           IGNORE_GENERATED_FILES: true
           IGNORE_GITIGNORED_FILES: true
           SAVE_SUPER_LINTER_OUTPUT: true
           SAVE_SUPER_LINTER_SUMMARY: true
           VALIDATE_YAML_PRETTIER: false
           VALIDATE_MARKDOWN_PRETTIER: false
+          VALIDATE_SQLFLUFF: true
       - name: Post artifact
         if: always()
         uses: actions/upload-artifact@v4.5.0
