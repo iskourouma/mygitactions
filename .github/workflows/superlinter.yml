@@ -31,7 +31,8 @@ jobs:
           SAVE_SUPER_LINTER_SUMMARY: true
           VALIDATE_YAML_PRETTIER: false
           VALIDATE_MARKDOWN_PRETTIER: false
-          VALIDATE_SQLFLUFF: ${DEFAULT_BRANCH}/.sqlfluff
+          VALIDATE_SQLFLUFF: true
+          #VALIDATE_SQLFLUFF: ${DEFAULT_BRANCH}/.sqlfluff
       - name: Post artifact
         if: always()
         uses: actions/upload-artifact@v4.5.0
