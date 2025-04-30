@@ -15,39 +15,3 @@
 ##
 [sqlfluff]
 dialect = ansi
-[sqlfluff:layout:type:alias_expression]
-# We want non-default spacing _before_ the alias expressions.
-spacing_before = align
-# We want to align them within the next outer select clause.
-# This means for example that alias expressions within the FROM
-# or JOIN clause would _not_ be aligned with them.
-align_within = select_clause
-# The point at which to stop searching outward for siblings, which
-# in this example would likely be the boundary of a CTE. Stopping
-# when we hit brackets is usually a good rule of thumb for this
-# configuration.
-align_scope = bracketed
-[sqlfluff:indentation]
-indented_joins = True
-[sqlfluff:indentation]
-indented_using_on = False
-allow_implicit_indents = True
-[sqlfluff:layout:type:comma]
-spacing_before = touch
-line_position = trailing
-[sqlfluff:layout:type:comma]
-line_position = leading
-[sqlfluff:layout:type:where_clause]
-keyword_line_position = alone
-[sqlfluff:layout:type:join_on_condition]
-keyword_line_position = trailing
-[sqlfluff:layout:type:partitionby_clause]
-keyword_line_position = leading
-[sqlfluff:layout:type:where_clause]
-keyword_line_position = none
-[sqlfluff:layout:type:orderby_clause]
-keyword_line_position = none
-[sqlfluff:layout:type:groupby_clause]
-keyword_line_position = none
-[sqlfluff:layout:type:having_clause]
-keyword_line_position = none
