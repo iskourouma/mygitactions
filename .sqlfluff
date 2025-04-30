@@ -15,3 +15,7 @@
 ##
 [sqlfluff]
 dialect = ansi
+[sqlfluff:indentation]
+indented_joins = false
+indented_using_on = false
+allow_implicit_indents = true
