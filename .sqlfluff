@@ -14,16 +14,4 @@
 ## https://docs.sqlfluff.com/en/stable/configuration.html
 ##
 [sqlfluff]
-dialect = ansi
-[sqlfluff:indentation]
-indented_joins = True
-[sqlfluff:indentation]
-indented_using_on = False
-allow_implicit_indents = True
-[sqlfluff:layout:type:comma]
-spacing_before = touch
-line_position = trailing
-[sqlfluff:layout:type:comma]
-line_position = leading
-[sqlfluff:layout:type:where_clause]
-keyword_line_position = alone
+#dialect = ansi
