@@ -15,7 +15,14 @@
 ##
 [sqlfluff]
 dialect = ansi
-[sqlfluff:indentation]
-indented_joins = false
-indented_using_on = false
-allow_implicit_indents = true
+[sqlfluff:layout:type:where_clause]
+keyword_line_position = none
+
+[sqlfluff:layout:type:orderby_clause]
+keyword_line_position = none
+
+[sqlfluff:layout:type:groupby_clause]
+keyword_line_position = none
+
+[sqlfluff:layout:type:having_clause]
+keyword_line_position = none
