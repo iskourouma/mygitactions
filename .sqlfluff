@@ -14,4 +14,4 @@
 ## https://docs.sqlfluff.com/en/stable/configuration.html
 ##
 [sqlfluff]
-#dialect = ansi
+dialect = oracle
